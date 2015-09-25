@@ -8,6 +8,10 @@
   margin-right: 2em;
   display: block;
 
+  &.social-link {
+    float: right;
+  }
+
   & {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;

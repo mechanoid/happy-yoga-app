@@ -15,12 +15,22 @@
     text-transform: uppercase;
     transition: color 0.5s ease;
 
+    &.genericon {
+      font-family: "Genericons";
+      font-size: 1.5em;
+      top: 50%;
+    }
+
     &:hover {
       color: $ft-main;
     }
 
     &:active {
       color: $ft-highlight;
+    }
+
+    &.genericon-facebook:hover {
+      color: #3b5998;
     }
   }
 }
