@@ -3,12 +3,24 @@
 <head>
   <title>Happy Yoga</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'modernizr-custom', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'prerender', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<section class="hy-layout">
+  <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_path("himalaya.jpeg") %>">
+    <%= render "navigation/navbar" %>
+  </header>
+
+  <div class="hy-layout-body">
+      <%= yield %>
+  </div>
+
+  <footer class="hy-layout-footer">
+
+  </footer>
+</section>
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>

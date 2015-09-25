@@ -1,0 +1,17 @@
+@mixin desktops {
+  @media only screen and (min-width: $break-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-and-beyond {
+  @media only screen and (min-width: $break-tablet) {
+    @content;
+  }
+}
+
+@mixin mobiles-in-portrait {
+  @media only screen and (max-width: $break-tablet) and (orientation: portrait) {
+    @content;
+  }
+}

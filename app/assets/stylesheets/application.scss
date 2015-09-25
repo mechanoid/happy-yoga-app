@@ -10,6 +10,13 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require font-definitions/shanti.css
+ *= require reset.css
  *= require_self
  */
+
+@import 'globals/variables/**/*';
+@import 'globals/defaults';
+
+@import 'helper/**/*';
+@import 'components/**/*'

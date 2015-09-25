@@ -1,0 +1,17 @@
+.hy-navbar {
+  background-color: $white;
+
+  @include desktops {
+    width: 80%;
+    max-width: $break-desktop-max;
+    margin: 0 auto;
+
+    padding: 1em;
+  }
+
+  .hy-navbar-link {
+    font-family: "shantiregular", "Helvetica Neue", helvetica, arial, sans-serif;
+    color: $ft-main;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,22 @@
+.hy-link-list {
+  overflow: hidden;
+}
+
+.hy-link-list-item {
+  float: left;
+  height: $navbar-height;
+  margin-right: 1em;
+  display: block;
+
+  & {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .hy-navbar-link {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+}
