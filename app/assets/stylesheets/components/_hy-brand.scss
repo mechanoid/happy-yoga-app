@@ -1,10 +1,13 @@
-
+.hy-brand-wrapper {
+  width: 15em;
+}
 // brand icon in the navbar
 .hy-brand-small {
-  width: 70px;
-  height: $navbar-height;
+  width: 73px;
+  height: 73px;
   margin: 0 4em;
-  padding-right: 4em;
-  border-right: 1px solid #e3e2e0;
   box-sizing: content-box;
+  // position: absolute;
+  // // top: -50%;
+  // // left: 0;
 }

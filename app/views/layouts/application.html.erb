@@ -11,6 +11,13 @@
 <section class="hy-layout">
   <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_path("himalaya.jpeg") %>">
     <%= render "navigation/navbar" %>
+    <div class="hy-welcome-header">
+      <img class="hy-brand"
+        src="<%= image_url "happy-yoga.svg" %>" onerror="this.onerror=null; this.src='<%= image_url "happy-yoga.png" %>'"
+        alt="Happy Yoga">
+      <h1 class="hy-welcome-header-headline">happy yoga</h1>
+      <p class="hy-welcome-header-claim">gesund.zufrieden.leben</p>
+    </div>
   </header>
 
   <div class="hy-layout-body">

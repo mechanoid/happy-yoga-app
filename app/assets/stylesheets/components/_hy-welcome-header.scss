@@ -1,0 +1,28 @@
+.hy-welcome-header {
+  position: absolute;
+  top: 20em;
+  left: 20%;
+
+  .hy-welcome-header-headline {
+    color: $white;
+    font-size: 7em;
+    text-align: center;
+    border-bottom: 10px solid $white;
+    display: inline;
+  }
+
+  .hy-welcome-header-claim {
+    font-family: "bebas_neuebold", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 3.3em;
+    color: $white;
+    margin-top: .4em;
+  }
+
+  .hy-brand {
+    position: absolute;
+    top: -35%;
+    left: 110%;
+    width: 300px;
+    height: 300px;
+  }
+}

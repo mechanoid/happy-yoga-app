@@ -1,19 +1,21 @@
 .hy-navbar {
   background-color: $white;
+  // display: none;
 
   @include desktops {
     width: 80%;
     max-width: $break-desktop-max;
     margin: 0 auto;
-
     padding: 1em;
+    padding-left: 3em;
   }
 
   .hy-navbar-link {
-    font-family: "shantiregular", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "open_sansregular", "Helvetica Neue", helvetica, arial, sans-serif;
     color: $ft-low-contrast;
     text-transform: uppercase;
     transition: color 0.5s ease;
+    font-size: .875em;
 
     &.genericon {
       font-family: "Genericons";
