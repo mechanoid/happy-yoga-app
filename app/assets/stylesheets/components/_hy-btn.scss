@@ -1,0 +1,35 @@
+.hy-btn {
+  border: none;
+  background: none;
+  background-color: $white;
+  color: $ft-low-contrast;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+
+  transition: all 0.5s ease-in-out;
+
+  &.hy-icn-square {
+    width: $btn-square-width;
+    height: $btn-square-height;
+
+    &:before {
+      font-size: 1.5em;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-btn-primary;
+    color: $ft-btn-primary;
+  }
+}
+
+.hy-btn-primary {
+  background-color: $bg-btn-primary;
+  color: $ft-btn-primary;
+
+  &:hover {
+    background-color: $ft-low-contrast;
+    color: $white;
+  }
+}

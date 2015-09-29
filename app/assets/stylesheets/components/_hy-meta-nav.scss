@@ -1,13 +1,4 @@
 .hy-meta-nav {
-  .hy-meta-nav-link {
-    color: $ft-low-contrast;
-    transition: color 0.5s ease-in-out;
-
-    &:hover {
-      color: $ft-main;
-    }
-  }
-
   .member-links {
     position: absolute;
     top: 0;

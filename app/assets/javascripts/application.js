@@ -1,3 +1,6 @@
+/*jslint devel: true, white: true */
+/*global $ */
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -14,3 +17,13 @@
 //= require parallax
 //= require turbolinks
 //= require_tree .
+
+
+(function(){
+  "use strict";
+
+  $('.hy-navbar-toggle').on('click', function(e) {
+    e.preventDefault();
+    $(this).parents('.hy-layout-header').toggleClass('--with-menu-opened');
+  });
+}());

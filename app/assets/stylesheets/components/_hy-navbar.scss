@@ -1,0 +1,35 @@
+.hy-navbar {
+  display: none;
+
+  @include desktops {
+    display: block;
+    background-color: $black;
+    height: 100%;
+    width: $navbar-width;
+
+
+    z-index: 1;
+
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    .hy-navbar-toggle {
+      position: absolute;
+      top: 0;
+      left: 100%;
+
+      &:after {
+        display: block;
+        content: '';
+        width: $toggle-arrow-size;
+        height: $toggle-arrow-size;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: inherit;
+      }
+    }
+  }
+}
