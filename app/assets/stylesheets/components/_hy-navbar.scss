@@ -7,7 +7,6 @@
     height: 100%;
     width: $navbar-width;
 
-
     z-index: 1;
 
     position: absolute;
@@ -30,6 +29,13 @@
         transform: translate(-50%, -50%) rotate(45deg);
         background-color: inherit;
       }
+    }
+
+    .hy-navbar-link {
+      display: block;
+      padding-top: 2.5em;
+      padding-bottom: 2.5em;
+      text-align: center;
     }
   }
 }

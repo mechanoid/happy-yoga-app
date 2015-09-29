@@ -15,15 +15,43 @@
 //
 //= require jquery
 //= require parallax
-//= require turbolinks
 //= require_tree .
 
 
 (function(){
   "use strict";
 
-  $('.hy-navbar-toggle').on('click', function(e) {
+  $('.hy-navbar-toggle,.hy-link-list-item').on('click', function(e) {
     e.preventDefault();
     $(this).parents('.hy-layout-header').toggleClass('--with-menu-opened');
   });
+
+  $('.hy-link-list-item').on('mouseover', (function() {
+    var $toggle;
+
+    return function() {
+      var linkOffset, $item;
+
+      if($toggle === undefined || $toggle === null) {
+        $toggle = $(this).parents('.hy-navbar').find('.hy-navbar-toggle');
+      }
+
+      $item = $(this);
+
+      linkOffset = $item.offset().top + parseInt($item.css('line-height'), 10) / 2;
+      $toggle.css('top', linkOffset);
+    };
+  }()));
+
+  $('.hy-link-list-item').on('mouseout', (function() {
+    var $toggle;
+
+    return function() {
+      if($toggle === undefined || $toggle === null) {
+        $toggle = $(this).parents('.hy-navbar').find('.hy-navbar-toggle');
+      }
+
+      $toggle.css('top', 0);
+    };
+  }()));
 }());
