@@ -1,0 +1,15 @@
+@mixin v-aligned() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// As a few people have pointed out, this method [to v-align] can cause elements to be blurry
+// due to the element being placed on a “half pixel”.
+// A solution for this is to set its parent element to preserve-3d.
+// Like following:
+@mixin protect-v-aligned() {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}

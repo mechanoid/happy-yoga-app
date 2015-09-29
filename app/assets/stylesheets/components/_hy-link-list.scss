@@ -9,7 +9,17 @@
   display: block;
   padding: 0 2em;
 
+  &.social-link, &.login-link {
+    float: right;
+  }
   &.social-link {
+    padding-left: 1em;
+  }
+  &.login-link {
+    padding-right: 0;
+  }
+
+  &.login-link {
     float: right;
   }
 
