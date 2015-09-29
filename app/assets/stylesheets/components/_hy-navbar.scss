@@ -1,41 +1,37 @@
 .hy-navbar {
-  display: none;
+  display: block;
+  background-color: $black;
+  height: 100%;
+  width: $navbar-width;
 
-  @include desktops {
-    display: block;
-    background-color: $black;
-    height: 100%;
-    width: $navbar-width;
+  z-index: 1;
 
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 100%;
 
+  .hy-navbar-toggle {
     position: absolute;
     top: 0;
-    right: 100%;
+    left: 100%;
 
-    .hy-navbar-toggle {
-      position: absolute;
-      top: 0;
-      left: 100%;
-
-      &:after {
-        display: block;
-        content: '';
-        width: $toggle-arrow-size;
-        height: $toggle-arrow-size;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(-50%, -50%) rotate(45deg);
-        background-color: inherit;
-      }
-    }
-
-    .hy-navbar-link {
+    &:after {
       display: block;
-      padding-top: 2.5em;
-      padding-bottom: 2.5em;
-      text-align: center;
+      content: '';
+      width: $toggle-arrow-size;
+      height: $toggle-arrow-size;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: inherit;
     }
+  }
+
+  .hy-navbar-link {
+    display: block;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    text-align: center;
   }
 }
