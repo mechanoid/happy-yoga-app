@@ -11,22 +11,7 @@
 <body>
 
 <section class="hy-layout">
-  <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_path "himalaya.jpg" %>">
-    <%= render "navigation/meta_nav" %>
-    <%= render "navigation/navbar" %>
-    <%= render "welcome_header" %>
-  </header>
-
-  <div class="hy-placement">
-  </div>
-
-  <div class="hy-layout-body">
-      <%= yield %>
-  </div>
-
-  <footer class="hy-layout-footer">
-
-  </footer>
+  <%= yield %>
 </section>
 
 <%= javascript_include_tag 'application' %>
