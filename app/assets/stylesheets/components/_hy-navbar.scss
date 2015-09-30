@@ -3,7 +3,6 @@
   background-color: $black;
   height: 100%;
   width: $navbar-width;
-
   z-index: 1;
 
   position: absolute;
@@ -36,6 +35,16 @@
 
     &:hover, &:active {
       background-color: $white;
+    }
+  }
+
+  @include tablets-and-below {
+    width: $navbar-width-tablet;
+
+    .hy-navbar-link {
+      font-size: 1.8em;
+      padding-top: .8em;
+      padding-bottom: .8em;
     }
   }
 }

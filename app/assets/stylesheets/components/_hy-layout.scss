@@ -18,6 +18,10 @@
 
   &.with-menu-opened {
     left: $navbar-width;
+  
+    @include tablets-and-below {
+      left: $navbar-width-tablet;
+    }
   }
 }
 
