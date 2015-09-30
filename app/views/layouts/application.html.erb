@@ -14,18 +14,7 @@
   <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_path "himalaya.jpg" %>">
     <%= render "navigation/meta_nav" %>
     <%= render "navigation/navbar" %>
-    <div class="hy-welcome-header">
-      <div class="hy-welcome-header-claim-wrapper">
-        <h1 class="hy-welcome-header-headline">happy yoga</h1>
-        <p class="hy-welcome-header-claim">gesund.zufrieden.leben</p>
-      </div>
-
-      <div class="hy-welcome-header-logo">
-        <img class="hy-brand"
-          src="<%= image_path "happy-yoga.svg" %>" onerror="this.onerror=null; this.src='<%= image_path "happy-yoga.png" %>'"
-          alt="Happy Yoga">
-      </div>
-    </div>
+    <%= render "welcome_header" %>
   </header>
 
   <div class="hy-placement">
