@@ -1,11 +1,15 @@
 .hy-welcome-header {
-  position: absolute;
-  top: 20em;
-  left: 20%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10em;
+  overflow: hidden;
+  text-align: center;
 
   .hy-welcome-header-headline {
     color: $white;
     font-size: 7em;
+    font-size: 20vw;
     text-align: center;
     border-bottom: 10px solid $white;
     display: inline;
@@ -14,15 +18,67 @@
   .hy-welcome-header-claim {
     font-family: "bebas_neuebold", "Helvetica Neue", helvetica, arial, sans-serif;
     font-size: 3.3em;
+    font-size: 9.5vw;
     color: $white;
     margin-top: .4em;
   }
 
+  .hy-welcome-header-logo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+
   .hy-brand {
-    position: absolute;
-    top: -35%;
-    left: 110%;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include beyond-mobiles {
+    .hy-welcome-header-headline {
+      font-size: 13vw;
+    }
+
+    .hy-welcome-header-claim {
+      font-size: 6.1vw;
+    }
+
+    .hy-welcome-header-logo {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+    }
+  }
+
+  @include desktops {
+    & {
+      width: 50%;
+      text-align: left;
+      padding-top: 25em;
+    }
+    .hy-welcome-header-claim-wrapper{
+      width: 60%;
+      float: left;
+      @include v-aligned;
+    }
+
+    .hy-welcome-header-logo {
+      width: 40%;
+      float: left;
+      margin-top: 0;
+      @include v-aligned;
+    }
+
+    .hy-welcome-header-headline {
+      font-size: 7em;
+      font-size: 7vw;
+    }
+
+    .hy-welcome-header-claim {
+      font-size: 3.3em;
+      font-size: 3.3vw;
+    }
   }
 }
