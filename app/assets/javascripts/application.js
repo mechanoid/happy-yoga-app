@@ -39,7 +39,7 @@
 
       $item = $(this);
 
-      linkOffset = $item.offset().top + parseInt($item.css('line-height'), 10) / 2;
+      linkOffset = $item.offset().top;
       $toggle.css('top', linkOffset);
     };
   }()));
