@@ -46,11 +46,14 @@
 
     .hy-meta-nav-link {
       @include v-aligned();
+      font-family: 'open_sansregular', "Helvetica Neue", helvetica, arial, sans-serif;
+      font-size: 1.1em;
 
       &:before {
-        font-size: 1.4em;
+        font-family: 'Genericons';
+        font-size: 1.3em;
         position: absolute;
-        top: 0;
+        top: -2px;
         right: 100%;
       }
     }
