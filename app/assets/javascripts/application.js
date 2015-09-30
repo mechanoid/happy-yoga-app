@@ -23,7 +23,8 @@
 
   $('.hy-navbar-toggle,.hy-link-list-item').on('click', function(e) {
     e.preventDefault();
-    $(this).parents('.hy-layout-header').toggleClass('--with-menu-opened');
+    $(this).parents('.hy-layout-header').toggleClass('with-menu-opened');
+    console.log($(this).parents('.hy-layout-header').css('left'));
   });
 
   $('.hy-link-list-item').on('mouseover', (function() {
