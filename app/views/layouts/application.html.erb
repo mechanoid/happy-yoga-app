@@ -2,19 +2,19 @@
 <html class="no-js">
 <head>
   <title>Happy Yoga</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'prerender', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'prerender' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <section class="hy-layout">
-  <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_url "himalaya.jpeg" %>">
+  <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_path "himalaya.jpg" %>">
     <%= render "navigation/meta_nav" %>
     <%= render "navigation/navbar" %>
     <div class="hy-welcome-header">
       <img class="hy-brand"
-        src="<%= image_url "happy-yoga.svg" %>" onerror="this.onerror=null; this.src='<%= image_url "happy-yoga.png" %>'"
+        src="<%= image_path "happy-yoga.svg" %>" onerror="this.onerror=null; this.src='<%= image_path "happy-yoga.png" %>'"
         alt="Happy Yoga">
       <h1 class="hy-welcome-header-headline">happy yoga</h1>
       <p class="hy-welcome-header-claim">gesund.zufrieden.leben</p>
@@ -33,6 +33,8 @@
   </footer>
 </section>
 
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application' %>
 </body>
 </html>
+
+  <header class="hy-layout-header" data-parallax="scroll" data-image-src="<%= image_url "fubar.jpeg" %>">
