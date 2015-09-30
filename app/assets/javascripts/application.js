@@ -50,9 +50,9 @@
       if($toggle === undefined || $toggle === null) {
         $toggle = $(this).parents('.hy-navbar').find('.hy-navbar-toggle');
       }
-      setTimeout(function() {
-        $toggle.css('top', 0);
-      }, 500);
+      // setTimeout(function() {
+      $toggle.css('top', 0);
+      // }, 500);
     };
   }()));
 }());
