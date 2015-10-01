@@ -21,6 +21,10 @@
   &:before {
     padding-right: 1em;
   }
+
+  &.closed:before {
+    color: $nice-red;
+  }
 }
 
 .hy-course-preview-item-header {
@@ -29,6 +33,10 @@
 
 .hy-course-preview-headline {
   &:before {
-    color: rgb(220, 61, 51);
+    color: $nice-red;
   }
+}
+
+.hy-course-preview-item-time-slot:before {
+  margin-right: .5em;
 }
