@@ -20,6 +20,13 @@
 
 (function(){
   "use strict";
+  if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+    $("a").click(function(){
+        //we just need to attach a click event listener to provoke iPhone/iPod/iPad's hover event
+        //strange
+    });
+  }
+
 
   $('.hy-navbar-toggle,.hy-link-list-item').on('click', function(e) {
     e.preventDefault();
