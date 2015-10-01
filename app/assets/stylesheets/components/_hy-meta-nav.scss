@@ -16,7 +16,7 @@
     width: 75px;
     background-color: $white;
 
-    &:hover {
+    &:hover, &.touch-bind.is-touched {
       background: $fb-blue;
       color: $white;
     }
