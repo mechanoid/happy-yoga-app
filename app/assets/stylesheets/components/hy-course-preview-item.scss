@@ -40,3 +40,21 @@
 .hy-course-preview-item-time-slot:before {
   margin-right: .5em;
 }
+
+
+.hy-course-teacher {
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+}
+
+.hy-course-teacher-avatar-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.hy-course-teacher-avatar {
+  max-width: 100%;
+}
