@@ -42,19 +42,29 @@
   .login-link {
     @include protect-v-aligned();
     height: 100%;
-    margin-right: 2em;
+    // margin-right: 2em;
+    padding-left: 3em;
+    padding-right: 2em;
+
 
     .hy-meta-nav-link {
       @include v-aligned();
       font-family: 'open_sansregular', "Helvetica Neue", helvetica, arial, sans-serif;
       font-size: 1.1em;
+      color: $white;
+      font-weight: bold;
+
 
       &:before {
-        font-family: 'Genericons';
+        font-family: 'FontAwesome';
         font-size: 1.3em;
         position: absolute;
         top: -2px;
-        right: 100%;
+        right: 110%;
+      }
+
+      &:hover {
+        color: $black;
       }
     }
   }

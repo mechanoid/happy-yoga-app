@@ -13,10 +13,11 @@
  *= require reset.css
  *= require font-definitions/open-sans.scss
  *= require font-definitions/bebas.scss
- *= require font-definitions/genericons.scss
  *= require_self
  */
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import 'globals/variables/**/*';
 @import 'globals/defaults';
 
