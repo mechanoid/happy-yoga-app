@@ -26,7 +26,10 @@
     $(this).parents('.hy-layout-header').toggleClass('with-menu-opened');
   });
 
-  $('.hy-link-list-item').on('mouseover', (function() {
+
+
+
+  $('.hy-navbar .hy-link-list-item').on('mouseover', (function() {
     var $toggle;
 
     return function() {
@@ -43,7 +46,7 @@
     };
   }()));
 
-  $('.hy-link-list-item').on('mouseout click', (function() {
+  $('.hy-navbar .hy-link-list-item').on('mouseout click', (function() {
     var $toggle;
 
     return function() {
@@ -55,4 +58,55 @@
       // }, 500);
     };
   }()));
+
+  var activatePreviewRoll = function(previewList) {
+    var $previewList, activatePreviewItem, $previewListItems, getNextItem, $activeItem, changeRate;
+    $previewList = $(previewList);
+
+    changeRate = 3000;
+    $previewListItems = $('.hy-course-preview-list-item', $previewList);
+
+    getNextItem = function($beforeItem) {
+      var $nextItem = $beforeItem.next();
+
+
+      if ($nextItem.length < 1) {
+        $nextItem = $activeItem.parents().children().first();
+      }
+
+      activatePreviewItem($beforeItem, $nextItem);
+    };
+
+    activatePreviewItem = function($beforeItem, $item) {
+      // SETUP
+      // make sure active element is on top
+      $beforeItem.css('position', 'absolute').css('top', 0).css('opacity', '1');
+      // position the next element below of the content area
+      $item.css('position', 'absolute').css('top', parseInt($item.outerHeight(), 10)).css('opacity', '0');
+
+      setTimeout(function() {
+        $beforeItem.css('top', -1 * parseInt($item.outerHeight(), 10)).css('opacity', '0');
+        $item.css('top', 0).css('opacity', '1');
+        getNextItem($item);
+      }, changeRate);
+    };
+
+    // Let the caroussel only start if there is more than one child
+    if ($previewListItems.length > 2) {
+      $activeItem = $previewListItems.first();
+      getNextItem($activeItem);
+    } else if ($previewListItems.length > 1) {
+      $activeItem = $previewListItems.first();
+      $activeItem.parent().append($activeItem.clone());
+      getNextItem($activeItem);
+    }
+
+  };
+
+
+  $('.hy-course-preview-list').each(function(i, list) {
+    setTimeout(function() {
+      activatePreviewRoll(list);
+    }, i * 1000);
+  });
 }());

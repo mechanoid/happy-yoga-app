@@ -2,26 +2,76 @@
   background: $white;
   height: 100px;
 
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 0;
+
+
+  @include desktops {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 .hy-course-preview {
   position: relative;
   height: 100%;
+
+
+  display: none;
+
+  &:first-of-type {
+    display: block;
+  }
+
+  @include desktops {
+    display: block;
+    float: left;
+    width: 50%;
+  }
 }
+
 .hy-course-preview-headline-wrapper {
   background-color: $white;
-  position: absolute;
-  top: -25%;
-  bottom: -25%;
+
+  height: 100%;
+  @include desktops {
+    position: absolute;
+    top: -15%;
+    bottom: -15%;
+    height: 130px;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+  }
+
   padding: 1em 2em;
-  height: 150px;
-  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
   z-index: 2;
+}
+
+.hy-course-preview-list {
+  margin-left: 10em;
+  overflow: hidden;
+}
+
+.hy-course-preview-list, .hy-course-preview-list-item {
+  height: 100%;
 }
 
 .hy-course-preview-headline {
   @include v-aligned;
+  font-family: "bebas_neuebold", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 1.5em;
+  top: 30%;
+
+  @include desktops {
+    top: 40%;
+  }
+
+  &:before {
+    font-family: "FontAwesome";
+    font-size: 1.2em;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

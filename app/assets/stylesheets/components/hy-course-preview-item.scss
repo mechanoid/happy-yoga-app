@@ -1,0 +1,34 @@
+.hy-course-preview-item {
+  @include v-aligned;
+}
+
+.hy-course-preview-list-item {
+  opacity: 0;
+  transition: top 0.5s ease, opacity 0.5s ease;
+
+  &:first-of-type {
+    opacity: 1;
+  }
+}
+
+.hy-course-preview-item-availability {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  color: green;
+
+  &:before {
+    padding-right: 1em;
+  }
+}
+
+.hy-course-preview-item-header {
+
+}
+
+.hy-course-preview-headline {
+  &:before {
+    color: rgb(220, 61, 51);
+  }
+}
