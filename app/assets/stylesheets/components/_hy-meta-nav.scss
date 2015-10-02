@@ -54,12 +54,11 @@
       color: $white;
       font-weight: bold;
 
-
       &:before {
         font-family: 'FontAwesome';
-        font-size: 1.3em;
+        // font-size: 1.3em;
         position: absolute;
-        top: -2px;
+        top: 0;
         right: 110%;
       }
 
