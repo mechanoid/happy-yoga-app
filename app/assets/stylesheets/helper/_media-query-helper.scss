@@ -1,3 +1,9 @@
+@mixin enhanced-desktops {
+  @media only screen and (min-width: $break-desktop-enhanced) {
+    @content;
+  }
+}
+
 @mixin desktops {
   @media only screen and (min-width: $break-desktop) {
     @content;

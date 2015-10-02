@@ -54,7 +54,16 @@
   height: 60px;
   border-radius: 100%;
   overflow: hidden;
+
+  @include desktops {
+    display: none;
+  }
+
+  @include enhanced-desktops {
+    display: block;
+  }
 }
+
 .hy-course-teacher-avatar {
   max-width: 100%;
 }
