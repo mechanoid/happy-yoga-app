@@ -12,12 +12,14 @@ h1, h2, h3 {
   color: #98968f;
 }
 
-h1 { font-size: 3em };
+h1 {
+  font-size: 3em;
+};
 h2 { font-size: 2em };
 h3 { font-size: 1.5em };
 
 body {
-  background-color: rgb(34, 31, 31);
+  // background-color: rgb(34, 31, 31);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -33,4 +35,6 @@ a:link, a:visited, a:hover, a:active {
 p {
   line-height: 1.2;
   margin-bottom: 1em;
+  // font-family: "open_sanslight", "Helvetica Neue", helvetica, arial, sans-serif;
+  // font-weight: thin;
 }

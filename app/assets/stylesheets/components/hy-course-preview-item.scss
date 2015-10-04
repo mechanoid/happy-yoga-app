@@ -9,6 +9,19 @@
   &:first-of-type {
     opacity: 1;
   }
+
+  p {
+    margin-bottom: .2em;
+    // text-align: right;
+  }
+
+  .hy-course-preview-item-teacher {
+    color: $secondary-contrast;
+  }
+}
+
+.hy-course-preview-item-headline {
+  white-space: nowrap;
 }
 
 .hy-course-preview-item-availability {

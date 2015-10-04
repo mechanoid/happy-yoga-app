@@ -48,16 +48,18 @@
     display: block;
     padding-top: 2em;
     padding-bottom: 1.7em;
-    padding-left: 2em;
-    // color: $white;
+    padding-left: 3em;
+    border-bottom: 1px solid rgba(52, 52, 49, 0.5);
+    transition: border .5s ease;
 
     &:hover, &:active {
-      // background-color: $bg-navbar-link-hover;
       color: $white;
+      border-left: 15px solid $prime-contrast;
     }
 
     &:before {
       margin-right: .5em;
+      color: $prime-contrast;
     }
   }
 
@@ -65,9 +67,7 @@
     width: $navbar-width-tablet;
 
     .hy-navbar-link {
-      font-size: 1em;
-      padding-top: .8em;
-      padding-bottom: .8em;
+      padding-left: 20%;
     }
   }
 }

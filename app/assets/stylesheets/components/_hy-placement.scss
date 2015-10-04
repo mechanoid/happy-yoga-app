@@ -1,11 +1,12 @@
 .hy-placement {
   padding: 0 10%;
+  background: $white;
 }
 
 .hy-placement-prime {
-  background-color: $prime-contrast-lightened;
+  background-color: rgb(241, 241, 241);
 
   &, & h1, & h2, & h3, & p {
-    color: $prime-contrast-ft;
+    color: rgb(108, 108, 108);
   }
 }
