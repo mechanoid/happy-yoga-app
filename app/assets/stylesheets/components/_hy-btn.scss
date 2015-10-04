@@ -18,7 +18,7 @@
     }
   }
 
-  &:hover {
+  &:hover, &.is-touched {
     background-color: $bg-btn-primary;
     color: $ft-btn-primary;
   }
@@ -28,7 +28,7 @@
   background-color: $bg-btn-primary;
   color: $ft-btn-primary;
 
-  &:hover {
+  &:hover, &.is-touched {
     background-color: $ft-low-contrast;
     color: $white;
   }
