@@ -4,9 +4,14 @@
 }
 
 .hy-placement-prime {
-  background-color: rgb(241, 241, 241);
+  // background-color: rgb(241, 241, 241);
+  background: linear-gradient(to bottom, rgb(157, 72, 204) 0%, rgb(157, 72, 204) 55%, rgb(97, 110, 209) 100%);
 
   &, & h1, & h2, & h3, & p {
-    color: rgb(108, 108, 108);
+    color: $white;
+  }
+
+  p {
+    font-family: "open_sanslight", "Helvetica Neue", helvetica, arial, sans-serif;
   }
 }

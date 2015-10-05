@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<section class="hy-layout">
+<%= hy_layout do %>
   <%= yield %>
-</section>
+<% end %>
 
 <%= javascript_include_tag 'application' %>
 </body>
