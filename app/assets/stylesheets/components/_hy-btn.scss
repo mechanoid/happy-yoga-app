@@ -33,3 +33,22 @@
     color: $white;
   }
 }
+
+.hy-btn-call-2-action {
+  background-color: transparent;
+  border: 2px solid $white;
+  padding: .5em 1em .3em 1em;
+  font-size: 1.8em;
+
+  &:link, &:visited, &:hover {
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "bebas_neuebold", "Helvetica Neue", helvetica, arial, sans-serif;
+  }
+
+  &:hover, &.is-touched {
+    background-color: $white;
+    color: rgb(137, 119, 209);
+  }
+}

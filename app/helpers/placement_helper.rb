@@ -5,4 +5,5 @@ module PlacementHelper
   component_tag 'placement', 'section'
   component_tag 'placement_header', 'header'
   component_tag 'placement_body'
+  component_tag 'placement_footer'
 end
