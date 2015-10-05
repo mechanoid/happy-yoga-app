@@ -1,5 +1,5 @@
 require 'component_tag'
-module PlacementHelperHelper
+module PlacementHelper
   include ComponentTag
 
   component_tag 'placement', 'article'
