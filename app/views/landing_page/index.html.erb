@@ -25,10 +25,10 @@
 
   <%= hy_placement(class: 'hy-offers') do %>
     <%= hy_placement_body(class: 'hy-card-gallery') do %>
-      <article class="hy-card">
-        <header class="hy-card-header"></header>
-        <div class="hy-card-body"></div>
-      </article>
+      <%= hy_card do %>
+        <%= hy_card_header do %><% end %>
+        <%= hy_card_body do %><% end %>
+      <% end %>
     <% end %>
   <% end %>
 
