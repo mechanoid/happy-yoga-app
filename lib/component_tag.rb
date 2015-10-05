@@ -3,10 +3,10 @@ module ComponentTag
 
   module ClassMethods
     def component_tag(name, tag = 'div')
-      define_method "hy_#{name}" do |options = {}, &block|
+      define_method "hy_#{name.underscore}" do |options = {}, &block|
         defaults = {
           tag: tag,
-          default_class: "hy-#{name}"
+          default_class: "hy-#{name.dasherize}"
         }
 
         tag_with_defaults(options, defaults, &block)

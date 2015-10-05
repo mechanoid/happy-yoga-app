@@ -1,5 +1,5 @@
 /*jslint devel: true, white: true */
-/*global $, setTimeout */
+/*global navigator, $, setTimeout */
 
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
@@ -35,9 +35,6 @@
     e.preventDefault();
     $(this).parents('.hy-layout-header').toggleClass('with-menu-opened');
   });
-
-
-
 
   $('.hy-navbar .hy-link-list-item').on('mouseover', (function() {
     var $toggle;
