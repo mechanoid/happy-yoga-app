@@ -29,9 +29,12 @@
 
   <%= hy_placement(class: 'hy-offers') do %>
     <%= hy_placement_body(class: 'hy-card-gallery') do %>
-      <%= hy_card do %>
-        <%= hy_card_header do %><% end %>
-        <%= hy_card_body do %><% end %>
+      <%= hy_card(class: "hy-offer") do %>
+        <%= hy_card_header do %>
+        <% end %>
+        <%= hy_card_body do %>
+          <p class="hy-offer-date fa fa-calendar">5. u. 6. Okt</p>
+        <% end %>
       <% end %>
     <% end %>
   <% end %>

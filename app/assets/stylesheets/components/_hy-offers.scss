@@ -1,0 +1,37 @@
+.hy-placement.hy-offers {
+  background-color: #f1f2f6;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+
+.hy-offer {
+  .hy-card-header {
+    background: image_url("jaye-martin.jpg");
+    height: 200px;
+    background-size: cover;
+  }
+
+  .hy-card-body {
+    height: 200px;
+    position: relative;
+  }
+
+  .hy-offer-date {
+    background-color: $white;
+    width: 90%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 2em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: .5em 1em;
+    box-shadow: $light-shadow;
+
+    &:before {
+      color: $nice-red;
+      margin-right: .5em;
+    }
+  }
+}
