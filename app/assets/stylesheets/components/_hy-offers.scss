@@ -21,13 +21,15 @@
     background-color: $white;
     width: 90%;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 50%;
     height: 2em;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     text-align: center;
     padding: .5em 1em;
-    box-shadow: $light-shadow;
+    margin-top: .5em;
+    margin-bottom: 0;
+    // box-shadow: $light-shadow;
 
     &:before {
       color: $nice-red;
